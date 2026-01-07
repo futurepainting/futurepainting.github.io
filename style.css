@@ -60,4 +60,5 @@ body {
   cursor: pointer;
 }
 
+.info { pointer-events: none; }
 
