@@ -49,3 +49,6 @@ body {
   font-size: 14px;
   opacity: 0.8;
 }
+
+.artwork a { display:block; width:100%; height:100%; }
+.artwork a img { cursor: pointer; }
