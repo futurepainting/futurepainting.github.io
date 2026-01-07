@@ -62,3 +62,6 @@ body {
 
 .info { pointer-events: none; }
 
+.artwork { pointer-events: none; }
+.artwork.active { pointer-events: auto; }
+
