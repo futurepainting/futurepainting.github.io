@@ -51,3 +51,10 @@ body{
   line-height:1.7;
   opacity:0.9;
 }
+
+.copyright {
+  margin-top: 32px;
+  font-size: 12px;
+  opacity: 0.6;
+  line-height: 1.6;
+}
