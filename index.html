@@ -42,18 +42,42 @@
 </div>
 
 <script>
-let current = 0;
-const artworks = document.querySelectorAll('.artwork');
+  const slides = document.querySelectorAll('.artwork').length
+    ? document.querySelectorAll('.artwork')
+    : document.querySelectorAll('.art');
 
-window.addEventListener('wheel', () => {
-  artworks[current].classList.remove('active');
-  current = (current + 1) % artworks.length;
-  artworks[current].classList.add('active');
-});
+  let current = 0;
+
+  function activate(index) {
+    if (!slides.length) return;
+    slides[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  function activateFromHash() {
+    if (!slides.length) return;
+    const n = parseInt(location.hash.replace('#', ''), 10);
+    if (!isNaN(n) && n >= 1 && n <= slides.length) {
+      slides.forEach(s => s.classList.remove('active'));
+      current = n - 1;
+      slides[current].classList.add('active');
+    }
+  }
+
+  activateFromHash();
+
+  window.addEventListener('hashchange', activateFromHash);
+
+  window.addEventListener('wheel', () => {
+    activate(current + 1);
+  });
 </script>
+
 
 </body>
 </html>
+
 
 
 
