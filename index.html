@@ -48,6 +48,16 @@
     ? document.querySelectorAll('.artwork')
     : document.querySelectorAll('.art');
 
+  const counter = document.getElementById('counter');
+  let current = 0;
+  let isScrolling = false;
+
+  function updateCounter() {
+    const currentNum = String(current + 1).padStart(2, '0');
+    const totalNum = String(slides.length).padStart(2, '0');
+    counter.textContent = `${currentNum} / ${totalNum}`;
+  }
+
   let current = 0;
   let isScrolling = false; // 휠 과도 입력 방지
 
@@ -55,6 +65,7 @@
     slides[current].classList.remove('active');
     current = (index + slides.length) % slides.length;
     slides[current].classList.add('active');
+    updateCounter();
   }
 
   function activateFromHash() {
@@ -85,12 +96,15 @@
     isScrolling = true;
     setTimeout(() => isScrolling = false, 420); // 전환 속도랑 맞추기
   }, { passive: true });
+  
+  updateCounter();
 </script>
 
 
 
 </body>
 </html>
+
 
 
 
