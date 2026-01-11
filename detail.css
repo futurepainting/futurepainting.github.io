@@ -71,3 +71,24 @@ body{
   opacity: 0.55;
   letter-spacing: 0.2px;
 }
+
+.specs{
+  margin-top: 28px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.specs .row{
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.specs .label{
+  opacity: 0.6;
+}
+
+.specs .value{
+  opacity: 0.9;
+}
