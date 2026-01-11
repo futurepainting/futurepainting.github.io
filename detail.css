@@ -97,8 +97,13 @@ body{
 .inquiry{
   margin-top: 18px;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.35;   /* 🔽 1.6 → 1.35 */
   opacity: 0.78;
+}
+
+/* 🔽 이 블록 추가 */
+.inquiry p{
+  margin: 2px 0;
 }
 
 .inquiry-title{
@@ -114,6 +119,7 @@ body{
   text-decoration: underline;
   opacity: 0.9;
 }
+
 
 /* 설명/키워드: 오른쪽 텍스트 영역 아래쪽 섹션 */
 .description{
