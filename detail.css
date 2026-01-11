@@ -92,3 +92,62 @@ body{
 .specs .value{
   opacity: 0.9;
 }
+
+/* 구매 문의 */
+.inquiry{
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.78;
+}
+
+.inquiry-title{
+  margin: 0 0 6px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.inquiry a{
+  color: inherit;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* 설명/키워드: 오른쪽 텍스트 영역 아래쪽 섹션 */
+.description{
+  margin-top: 56px;     /* 구매문의 아래로 충분히 내려감 */
+  max-width: 560px;
+}
+
+.description h3{
+  margin: 0 0 12px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.description p{
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.88;
+}
+
+.keywords{
+  margin-top: 12px;
+  font-size: 11px;
+  opacity: 0.55;
+  letter-spacing: 0.2px;
+}
+
+/* 저작권: 화면 하단 고정(이미 쓰고 있으면 유지) */
+.copyright{
+  position: fixed;
+  right: 24px;
+  bottom: 16px;
+  font-size: 10px;
+  opacity: 0.35;
+  line-height: 1.4;
+  color: white;
+  pointer-events: none;
+}
