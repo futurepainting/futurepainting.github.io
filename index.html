@@ -18,11 +18,12 @@
 
     .wrap{
       min-height: 100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
       padding: 40px 20px;
+      display: grid;
+      justify-content: center;
+      gap: 18px;  /* 박스 사이 간격 */
     }
+
 
     .card{
       width: min(720px, 100%);
@@ -102,38 +103,54 @@
 <body>
 
   <div class="wrap">
-    <div class="card">
 
-      <h1>Online Archive</h1>
-      <p class="desc">
-        동시대 작가의 작업을 전시/기록하기 위한 비상업적 온라인 아카이브입니다.
-        작품 이미지는 작가의 제공 및 허락 하에 게시됩니다.
-      </p>
+  <!-- ✅ 큰 박스 1 -->
+  <div class="card">
+    <h1>Online Archive</h1>
+    <p class="desc">
+      동시대 작가의 작업을 전시/기록하기 위한 비상업적 온라인 아카이브입니다.
+      작품 이미지는 작가의 제공 및 허락 하에 게시됩니다.
+    </p>
 
-      <div class="shows">
-
-      <div class="show">
-        <div class="label">NOW SHOWING</div>
-        <div class="artist">천애정 (Cheon Aejeong)</div>
-        <a class="btn primary" href="exhibition-cheon.html">전시 입장하기 →</a>
-      </div>
-
-      <div class="show">
-        <div class="label">NOW SHOWING</div>
-        <div class="artist">김민지 (Kim Minji)</div>
-        <a class="btn" href="exhibition-kim.html">전시 입장하기 →</a>
-      </div>
-
+    <div class="now">
+      <div class="label">NOW SHOWING</div>
+      <div class="artist">천애정 (Cheon Aejeong)</div>
     </div>
 
+    <div class="actions">
+      <a class="btn primary" href="exhibition-cheon.html">전시 입장하기 →</a>
+    </div>
 
-      <div class="footer">
-        © The artists. All rights reserved. Images used with permission.<br/>
-        This site is for exhibition/archive purposes only.
-      </div>
-
+    <div class="footer">
+      © Cheon Aejeong, 2024. Images used with permission.<br/>
+      This site is for exhibition/archive purposes only.
     </div>
   </div>
+
+  <!-- ✅ 큰 박스 2 -->
+  <div class="card">
+    <h1>Online Archive</h1>
+    <p class="desc">
+      동시대 작가의 작업을 전시/기록하기 위한 비상업적 온라인 아카이브입니다.
+      작품 이미지는 작가의 제공 및 허락 하에 게시됩니다.
+    </p>
+
+    <div class="now">
+      <div class="label">NOW SHOWING</div>
+      <div class="artist">김민지 (Kim Minji)</div>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href="exhibition-kim.html">전시 입장하기 →</a>
+    </div>
+
+    <div class="footer">
+      © Kim Minji, 2024. Images used with permission.<br/>
+      This site is for exhibition/archive purposes only.
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>
