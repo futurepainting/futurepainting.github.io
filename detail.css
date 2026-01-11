@@ -64,3 +64,10 @@ body{
 
   pointer-events: none; /* 클릭 방해 안 하게 */
 }
+
+.keywords{
+  margin-top: 12px;
+  font-size: 11px;
+  opacity: 0.55;
+  letter-spacing: 0.2px;
+}
